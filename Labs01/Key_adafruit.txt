@@ -1,2 +1,2 @@
 AIO_USERNAME = "Danny0943777525"
-AIO_KEY = "aio_aYKT91pTTg89GKnv8fFpgpzJEsRc"
+AIO_KEY = "aio_WUtN60stPv31lBjbxt1ulzPn9xDz"
