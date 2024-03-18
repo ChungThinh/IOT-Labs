@@ -11,7 +11,7 @@ def getPort():
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
     #Replace YOUR COM
-    commPort = "/dev/pts/9"
+    commPort = "/dev/pts/7"
     return commPort
 
 if getPort() != "None":
@@ -44,3 +44,7 @@ def readSerial(client):
                 mess = ""
             else:
                 mess = mess[end+1:]
+
+def writeData(data):
+    ser.write(str(data).encode())
+
