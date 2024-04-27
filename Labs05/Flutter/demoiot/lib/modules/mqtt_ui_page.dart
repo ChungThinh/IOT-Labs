@@ -27,7 +27,7 @@ class MqttPageState extends State<MqttPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Center(child: Text(widget.title)),
       ),
       body: FutureBuilder<void>(
         future: initMQTT(),
@@ -50,7 +50,10 @@ class MqttPageState extends State<MqttPage> {
   Widget _body() {
     return Column(
       children: <Widget>[
-        // _showData(),
+        _showData(),
+        const SizedBox(
+          height: 10,
+        ),
         _button(),
       ],
     );
@@ -88,16 +91,14 @@ class MqttPageState extends State<MqttPage> {
   }
 
   Widget _button() {
-    return Column(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        const Text("Lamp: ", style: TextStyle(fontSize: 30)),
         ToggleButton(
             manager: manager,
             dataStream: mystream.lampStream,
             topic: manager.lampTopic),
-        ToggleButton(
-            manager: manager,
-            dataStream: mystream.lampStream,
-            topic: manager.lampTopic)
       ],
     );
   }
