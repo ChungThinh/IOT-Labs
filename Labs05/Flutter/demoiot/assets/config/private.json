@@ -1,7 +1,7 @@
 {
     "broker": "io.adafruit.com",
-    "username": "Danny0943777525",
-    "key": "aio_prRC04bdRPaSAardkvWEXHo9HKPk",
+    "username": "",
+    "key": "",
     "topics": {
         "humidity": "Danny0943777525/feeds/labiot.humidity",
         "temperature": "Danny0943777525/feeds/labiot.temp",
