@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txtTemperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e7492a"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_margin="20dp"
+                android:text="28℃">
+            </TextView>
+            <TextView
+                android:id="@+id/txtHumidity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#1e81b0"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_margin="20dp"
+                android:text="65%">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnPump"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:textSize="60dp"
+            app:on="false"
+            app:textOn = "BẬT"
+            app:textOff = "TẮT"
+            app:colorBorder="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLamp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:textSize="60dp"
+            app:on="false"
+            app:textOn = "BẬT"
+            app:textOff = "TẮT"
+            app:colorBorder = "#00c4a6"
+            app:colorOn = "#00c4a6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+</LinearLayout>
